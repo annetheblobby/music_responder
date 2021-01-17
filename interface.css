@@ -1,0 +1,61 @@
+#blob {
+    position: relative;
+  }
+  
+  #blob canvas {
+    width: 1000px;
+    margin-top: -7%;
+  }
+  
+  @media (max-width: 1200px) {
+    #blob canvas {
+      margin-top: -10%;
+      width: 800px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #blob canvas {
+      width: 800px;
+    }
+  }
+  
+  html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  * {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  
+  *:before, *:after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  
+  html,
+  body {
+    overflow: hidden;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: 'Source Sans Pro', Arial;
+    background: #1c1f29;
+  }
