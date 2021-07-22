@@ -1,16 +1,59 @@
-#blob {
-    position: relative;
-  }
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&family=Tourney:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@900&family=Tourney:wght@300&display=swap');
+
+.parrallax{
+  min-height: 1500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.content{
+  height: 620px;
+  background-color:rgb(72, 93, 133);
+  font-family: 'Rubik', sans-serif;
+  /* font-family: 'Tourney', cursive; */
+  /* font-family: 'Bebas Neue', cursive; */
+  margin: 20% 10%;
+  font-size: 180px;
+  text-align: center;
+  color: rgb(236, 120, 198);
+
+  top: -20%;
+  z-index: -1;
+  /* background: rgb(63,94,251); */
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgb(168, 39, 185) 100%);
+
+}
+
+img{
+  z-index: -2;
+  width: 600px;
+  height: auto;
+  left: 300px;
+  
+}
+
+
   
   #blob canvas {
     width: 1000px;
     margin-top: -7%;
+    position: fixed;
+    top: 25vh;
+    left: 15vw;
+    /* background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgb(168, 39, 185) 100%); */
   }
   
   @media (max-width: 1200px) {
     #blob canvas {
       margin-top: -10%;
-      width: 800px;
+      width: 1000px;
     }
   }
   
@@ -20,13 +63,13 @@
     }
   }
   
-  html {
+  /* html {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-  }
+  } */
   
-  * {
+  /* * {
     -webkit-box-sizing: inherit;
             box-sizing: inherit;
   }
@@ -34,15 +77,15 @@
   *:before, *:after {
     -webkit-box-sizing: inherit;
             box-sizing: inherit;
-  }
+  } */
   
-  html,
+  /* html,
   body {
     overflow: hidden;
-  }
+  } */
   
   body {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -58,4 +101,10 @@
             flex-direction: column;
     font-family: 'Source Sans Pro', Arial;
     background: #1c1f29;
+  }
+
+  #blob {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 25%;
   }

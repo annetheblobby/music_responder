@@ -16,6 +16,9 @@ $(document).ready(function () {
 
 
     function init() {
+
+        document.body.innerHTML = document.body.innerHTML.replace("Click to meet blob", "I am blob");
+
         if (navigator.mediaDevices.getUserMedia === undefined) {
             navigator.mediaDevices.getUserMedia = function(constraints) {
 
@@ -149,14 +152,16 @@ $(document).ready(function () {
                     convolver.connect(gainNode);
                     gainNode.connect(analyser);
                     analyser.connect(audioCtx.destination);
-
                     visualize();
+                    
                     // voiceChange();
             })
             .catch( function(err) { console.log('The following gUM error occured: ' + err);})
         } else {
             console.log('getUserMedia not supported on your browser!');
         }
+
+
 
         // visualizing using stream of media
         function visualize() {
@@ -167,6 +172,7 @@ $(document).ready(function () {
             var dataArray = new Uint8Array(bufferLength);
 
             var draw = function() {
+                
 
                 drawVisual = requestAnimationFrame(draw);
 
