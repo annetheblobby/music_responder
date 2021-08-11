@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     function init() {
 
-        document.body.innerHTML = document.body.innerHTML.replace("Click to meet blob", "I am blob");
+        document.body.innerHTML = document.body.innerHTML.replace("Click to meet blob", "Hello, I'm blob. I love listening to people's stories or just how their day was, so please talk to me. I also love music and shake my blobby body to whatever song plays :) I may get too excited and cause a reverb but you can turn your computer sound down if you don't want to hear me.");
 
         if (navigator.mediaDevices.getUserMedia === undefined) {
             navigator.mediaDevices.getUserMedia = function(constraints) {
@@ -77,7 +77,7 @@ $(document).ready(function () {
 
         // Lighting 
 
-        let lightTop = new THREE.DirectionalLight(0x1642a8, 0.8);
+        let lightTop = new THREE.DirectionalLight(0xfcb045, 0.8);
         lightTop.position.set(0, 500, 200);
         //lightTop.castShadow = true;
         scene.add(lightTop);
@@ -87,13 +87,13 @@ $(document).ready(function () {
         //lightMid.castShadow = true;
         scene.add(lightMid);
 
-        let lightBottom = new THREE.DirectionalLight(0xfcb045, 0.8);
+        let lightBottom = new THREE.DirectionalLight(0x1642a8, 0.8);
         lightBottom.position.set(0, -500, 400);
         //lightBottom.castShadow = true;
         scene.add(lightBottom);
 
-        /*let ambientLight = new THREE.AmbientLight(0x444444);
-        scene.add(ambientLight);*/
+        let ambientLight = new THREE.AmbientLight(0x444444);
+        scene.add(ambientLight);
 
         let sphere = new THREE.Mesh(geometry, material);
         scene.add(sphere);
