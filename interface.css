@@ -1,11 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&family=Tourney:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@900&family=Tourney:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Space+Mono:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tourney:wght@100;200&display=swap');
 
 .parrallax{
@@ -18,33 +11,17 @@
 }
 
 .content{
-  
-  /* width: 60%; */
-  /* background-color:rgb(72, 93, 133); */
-  /* font-family: 'Rubik', sans-serif; */
-  /* font-family: 'Chakra Petch', sans-serif; */
-  /* font-family: 'Press Start 2P', cursive; */
-  /* font-family: 'Space Mono', monospace; */
   font-family: 'Tourney', cursive;
   font-weight: 100;
-  /* font-family: 'Bebas Neue', cursive; */
-  /* font-family: 'Bungee', cursive; */
   margin: 70% 10%;
   font-size: 140px;
   font-kerning: 160px;
-  /* color: rgba(64, 14, 97, 0.5);  */
   color: white;
-  /* -webkit-text-stroke: 3px rgb(209, 43, 195, 0.3); */
   -webkit-text-stroke: 10px rgba(255, 244, 254, 0.15);
   text-align:center;
-  
-
 
   top: -20%;
   z-index: -1;
-  /* background: rgb(63,94,251); */
-  /* background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgb(168, 39, 185) 100%); */
-
 }
 
 img{
@@ -54,8 +31,6 @@ img{
   left: 300px;
   
 }
-
-
   
   #blob canvas {
     width: 1000px;
@@ -63,8 +38,6 @@ img{
     position: fixed;
     top: 20vh;
     left: 15vw;
-    /* background: rgb(255, 255, 255); */
-    /* background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgb(168, 39, 185) 100%); */ 
   }
   
   @media (max-width: 1200px) {
@@ -117,7 +90,6 @@ img{
         -ms-flex-direction: column;
             flex-direction: column;
     font-family: 'Source Sans Pro', Arial;
-    /* background-color: azure; */
     background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
 
   }
